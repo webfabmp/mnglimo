@@ -1,0 +1,35 @@
+<%- contentFor('body') %>
+
+<h3><small>Pets desaparecidos</small></h3>
+
+<% const postagensDesaparecimento = postagens.filter(postagem => postagem.categoria === 'Desaparecimento'); %>
+
+<% if (postagensDesaparecimento.length > 0) { %>
+    <% postagensDesaparecimento.forEach(function (postagem) { %>
+        <div class="row linha">
+            <div class="bg-white d-flex shadow-lg bg-body-tertiary rounded postagem">
+                <div class="col d-flex align-middle coluna justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <img
+                            class="card-img-top img-thumbnail"
+                            src="<%= postagem.foto %>"
+                            alt="Imagem de capa do card"
+                            style="min-width: 25rem;"
+                        />
+                    </div>
+                </div>
+
+                <div class="col coluna">
+                    <h4 class="card-title"><%= postagem.titulo %></h4>
+                    <p><%= postagem.local %></p>
+                    <a href="/postagem/<%=postagem.id%>" class="btn btnp">Leia mais</a>
+                    <hr>
+                    <p class="d-none d-sm-block"><%= postagem.postadoEm %></p>
+                    <p class="d-none d-sm-block">Por <%= postagem.nomeUsuario %></p>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+<% } else { %>
+    <h1>Ainda não há postagens</h1>
+<% } %>
