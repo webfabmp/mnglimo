@@ -16,9 +16,10 @@
   },
   "production": {
     "username": "postgres",
-    "password": "300506",
+    "password": null,
     "database": "blog",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "sqlite",
+    "storage": "dev.sqlite"
   }
 }

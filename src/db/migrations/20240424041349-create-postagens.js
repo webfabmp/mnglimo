@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       texto: {
-        type: Sequelize.TEXT
+        type: Sequelize.STRING
       },
       categoria: {
         type: Sequelize.STRING
@@ -24,7 +24,7 @@ module.exports = {
       contato: {
         type: Sequelize.STRING
       },
-      nomeUsuario: {
+      nomeusuario: {
         type: Sequelize.STRING
       },
       createdAt: {

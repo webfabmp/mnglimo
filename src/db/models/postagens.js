@@ -12,8 +12,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   Postagens.init({
     titulo: DataTypes.STRING,
-    texto: DataTypes.TEXT,
-    nomeUsuario: DataTypes.INTEGER,
+    texto: DataTypes.STRING,
+    nomeusuario: DataTypes.STRING,
     categoria: DataTypes.STRING,
     local: DataTypes.STRING,
     contato: DataTypes.STRING,
