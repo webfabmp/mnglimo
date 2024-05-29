@@ -22,6 +22,5 @@ app.use('/', rotaIndex);
 app.use('/api/postagens', rotaPostagem);
 
 app.listen(PORT, () => {
-    console.log(`Iniciando servidor no ambiente ${process.env.NODE_ENV}.`);
-    console.log(`Servidor funcionando na porta ${PORT}.`);
+    console.log(`Iniciando servidor no ambiente ${process.env.NODE_ENV}, porta: ${PORT}`);
 })
