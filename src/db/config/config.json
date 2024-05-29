@@ -15,11 +15,13 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "postgres",
-    "password": null,
-    "database": "blog",
-    "host": "127.0.0.1",
-    "dialect": "sqlite",
-    "storage": "dev.sqlite"
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOption": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
