@@ -7,7 +7,7 @@
     "dev": "cross-env NODE_ENV=development nodemon --exec node src/app.js",
     "start": "npx sequelize-cli db:migrate && cross-env NODE_ENV=production node src/app.js",
     "migrate-dev": "cross-env NODE_ENV=development npx sequelize-cli db:migrate",
-    "vercel-build": "npx sequelize-cli db:migrate && cross-env NODE_ENV=production"
+    "vercel-build": "npx sequelize-cli db:migrate && cross-env NODE_ENV=production node src/app.js"
   },
   "author": "Fabrício Montenegro",
   "license": "ISC",
