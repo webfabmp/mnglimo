@@ -78,7 +78,7 @@ router.post('/', async (req, res) => {
         data.foto = `/static/uploads/${req.file.filename}`
     }
     const postagem = await Postagens.create(data);
-    res.json({ msg: "Postagem adicionada com sucesso!", idPostagem: postagem.id })
+    res.redirect(`/postagem/${postagem.id}`)
 })
 
 router.delete('/', async (req, res) => {

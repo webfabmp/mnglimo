@@ -8,6 +8,6 @@ module.exports = {
         contato: { type: "string" },
         nomeusuario: { type: "string" }
     },
-    required: ["titulo", "categoria", "local", "contato", "nomeUsuario"],
+    required: ["titulo", "categoria", "local", "contato", "nomeusuario"],
     additionalProperties: true
 }
