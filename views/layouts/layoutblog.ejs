@@ -56,8 +56,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 100vh;
-            box-shadow: 0vh 0vh 8vh rgb(0, 0, 0)
+            height: 85vh;
+            padding-bottom: 5vh;
+            box-shadow: 0vh 0vh 8vh rgb(0, 0, 0);
         }
 
         #aboutus {
@@ -224,7 +225,7 @@
         }
 
         .titulo {
-            font-size: 5vw;
+            font-size: 10vh;
         }
 
         .nav-link {
@@ -236,8 +237,6 @@
         }
 
         .navbar {
-            padding-left: 10vh;
-            padding-right: 10vh;
             top: 0;
             display: block;
             width: 100%;
@@ -313,6 +312,17 @@
             color: rgba(255, 207, 74, 0.918);
         }
 
+        #limoback {
+            width: 90%;
+            border-radius: 1vh 1vh 1vh 1vh;
+            box-shadow: 0vh 0vh 10vh black;
+            border: solid 0.5vh rgba(243, 183, 19, 0.589);
+        }
+
+        .hide {
+            display: none;
+        }
+
         @keyframes fade-in {
             from {
                 margin-left: 5%;
@@ -334,11 +344,11 @@
         @media (max-width: 992px) {
 
             .titulo {
-                font-size: 8vh;
+                font-size: 6.5vh;
             }
 
             .marca {
-                font-size: 8vh;
+                font-size: 6vh;
             }
 
             .btnp {
@@ -351,6 +361,12 @@
 
             .contact-info {
                 margin-top: 5vh;
+            }
+
+            .form-control {
+                margin-top: 2vh;
+                width: 130%;
+                height: 5vh;
             }
 
             #fleetpic {
@@ -366,6 +382,19 @@
                 display: flex;
                 justify-content: center;
             }
+        }
+
+        @media (max-width: 605px) {
+            #main {
+                height: 70h;
+                width: 100%;
+            }
+
+            .hide {
+                display: flex;
+                justify-content: center;
+            }
+
         }
     </style>
 
