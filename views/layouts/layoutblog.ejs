@@ -323,6 +323,10 @@
             display: none;
         }
 
+        .hidden-label {
+            display: none;
+        }
+
         @keyframes fade-in {
             from {
                 margin-left: 5%;
@@ -382,6 +386,7 @@
                 display: flex;
                 justify-content: center;
             }
+
         }
 
         @media (max-width: 605px) {
@@ -395,6 +400,13 @@
                 justify-content: center;
             }
 
+        }
+
+        @media (max-width: 767px) {
+            .hidden-label {
+                display: block;
+                margin-bottom: 3vh;
+            }
         }
     </style>
 
