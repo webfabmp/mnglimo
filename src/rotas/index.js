@@ -9,8 +9,8 @@ router.get('/contact', async (req, res) => {
     res.render('pages/contact')
 })
 
-router.get('/book', async (req, res) => {
-    res.render('pages/book')
+router.get('/sitemap.xml', async (req, res) => {
+    res.sendFile('sitemap.xml')
 })
 
 module.exports = router;
