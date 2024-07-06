@@ -28,12 +28,12 @@ app.use('/sitemap.xml', async (req, res, next) => {
 
 
 <url>
-  <loc>https://limoroyalroad.com/</loc>
+  <loc>https://www.limoroyalroad.com/</loc>
   <lastmod>2024-07-05T19:49:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://limoroyalroad.com/contact</loc>
+  <loc>https://www.limoroyalroad.com/contact</loc>
   <lastmod>2024-07-05T19:49:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>

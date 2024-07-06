@@ -410,6 +410,10 @@
         }
     </style>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16635643036">
+    </script>
+
     <script>
         window["moovsAPI"] = moovsAPI = window["moovsAPI"] || [];
         moovsAPI.push(["operator", "2ddc36e8-3475-11ef-9e79-e79d04d91d2e"]);
@@ -419,7 +423,22 @@
             s.async = 1;
             m.head.appendChild(s);
         })(document, "script", "https://static.moovs.app");
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16635643036');
+
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16635643036/wjCCCNLtrsAZEJyJv_w9',
+            'value': 1.0,
+            'currency': 'USD',
+            'transaction_id': ''
+        });
     </script>
+
+
 
 </head>
 
@@ -428,19 +447,19 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <div class="navbrand">
-                
-                    <a href="/">
-                        <img src="static/logo.jpeg" alt="brand" style="width: 30vh;">
-                    </a>
+
+                <a href="/">
+                    <img src="static/logo.jpeg" alt="brand" style="width: 30vh;">
+                </a>
             </div>
-                
 
 
-                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -455,7 +474,7 @@
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
-                
+
             </div>
         </div>
     </nav>
