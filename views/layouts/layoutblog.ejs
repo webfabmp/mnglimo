@@ -11,19 +11,17 @@
     <link rel="icon" href="static/favicon.ico">
     <link rel="apple-touch-icon" href="static/favicon.ico">
 
-    <title>Royal Road</title>
+    <title>MNG LIMO LLC</title>
 
     <style>
         body {
-            background-color: rgb(14, 14, 14);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
             color: white;
-            position: absolute;
-            width: 100%;
         }
 
         h1 {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 6vh;
         }
 
         h2 {
@@ -45,36 +43,35 @@
 
         a,
         p {
-            font-size: 5vh;
+            font-size: 4vh;
         }
 
         #main {
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.7),
-                    rgba(0, 0, 0, 0.7)),
-                url('static/limo.avif');
-
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 85vh;
-            padding-bottom: 5vh;
-            box-shadow: 0vh 0vh 8vh rgb(0, 0, 0);
+            padding: 3vh;
+            background: linear-gradient(to right, rgb(255, 252, 237) 0%, rgb(15, 15, 15) 95%);
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            border-bottom: solid 0.5vh rgb(255, 209, 81);
+            text-shadow: 0vh 0vh 1vh rgb(0, 0, 0);
         }
 
         #aboutus {
-            background-size: cover;
             background: rgb(0, 0, 0);
-            background: rgb(185, 153, 20);
-            background: linear-gradient(180deg, rgba(51, 41, 1, 0.795) 0%, rgb(14, 14, 14) 100%);
+            padding-bottom: 5vh;
         }
 
         #fleet {
-            background: rgb(14, 14, 14);
+            background: black;
         }
 
         #fleetpic {
             box-shadow: 0vh 0vh 3vh rgb(0, 0, 0);
+        }
+
+        .sub {
+            text-decoration: underline rgb(255, 209, 81);
         }
 
         .carousel {
@@ -172,6 +169,10 @@
             background-size: 70%;
         }
 
+        #escalade {
+            size: 70%;
+        }
+
         .carousel-image {
             height: 50vh;
         }
@@ -180,23 +181,28 @@
             font-size: clamp(0.75em, 0.5em + 1vw, 1.25em);
         }
 
+        .margin {
+            margin-top: 8vh;
+            margin-bottom: 8vh;
+        }
+
         .btnp {
-            background-color: rgba(243, 183, 19, 0.918);
-            border: rgba(243, 183, 19, 0.918);
+            background: linear-gradient(rgb(26, 25, 25) 40%, rgb(0, 0, 0) 100%);
+            border: silver;
             border-radius: 2vh 2vh 2vh 2vh;
             outline: none;
-            font-weight: bold;
             width: 60%;
-            color: rgba(0, 0, 0, 0.918);
+            color: rgb(187, 143, 0);
             font-size: 6vh;
             box-shadow: 2vh 0vh 8vh rgb(0, 0, 0);
-            transition: 0.3s;
+            transition: 0.7s;
+            font-weight: bold;
         }
 
         .btnp:hover {
-            background-color: rgb(0, 0, 0);
-            color: rgba(243, 183, 19, 0.918);
-            box-shadow: 2vh 0vh 8vh rgba(247, 210, 0, 0.377);
+            background: linear-gradient(rgb(255, 153, 0) 40%, rgb(255, 187, 0) 100%);
+            color: rgb(0, 0, 0);
+            box-shadow: 0vh 0vh 8vh rgba(255, 255, 255, 0.377);
         }
 
         .send {
@@ -218,15 +224,25 @@
             box-shadow: 2vh 0vh 8vh rgba(247, 210, 0, 0.377);
         }
 
+        .click-here {
+            color: white;
+        }
+
+        .click-here:hover {
+            color: rgb(255, 209, 81);
+        }
+
         .marca {
-            font-size: 10vh;
-            color: rgba(243, 183, 19, 0.918);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 8vh;
+            color: rgba(255, 255, 255, 0.918);
             font-weight: bold;
         }
 
         .titulo {
-            font-size: 10vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: rgb(255, 209, 81);
         }
 
         .nav-link {
@@ -234,7 +250,7 @@
         }
 
         .nav-link:hover {
-            color: rgba(243, 183, 19, 0.918)
+            color: silver
         }
 
         .navbar {
@@ -242,8 +258,8 @@
             display: block;
             width: 100%;
             position: sticky;
-            background-color: rgb(0, 0, 0);
-            box-shadow: 0vh 0.5vh 2vh rgba(243, 183, 19, 0.637);
+            background: linear-gradient(to right, rgb(0, 0, 0) 40%, rgb(39, 31, 16) 60%);
+            border-bottom: solid 1vh rgb(255, 205, 69);
             z-index: 20;
         }
 
@@ -251,8 +267,7 @@
             padding: 1.5rem;
             width: 100%;
             bottom: 0;
-            background-color: rgb(0, 0, 0);
-            ;
+            background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(39, 31, 16) 100%);
         }
 
         .container-fluid {
@@ -268,12 +283,7 @@
         }
 
         hr {
-            width: 90%;
             background-color: rgba(255, 207, 74, 0.918);
-        }
-
-        #logotipo {
-            width: 40vh;
         }
 
         .menu {
@@ -328,15 +338,12 @@
             display: none;
         }
 
+        .navbar-toggler {
+            padding: 0;
+            margin: 0;
+        }
+
         @keyframes fade-in {
-            from {
-                margin-left: 5%;
-            }
-
-            to {
-                margin-left: 0%;
-            }
-
             0% {
                 opacity: 0;
             }
@@ -348,8 +355,12 @@
 
         @media (max-width: 992px) {
 
-            .titulo {
-                font-size: 6.5vh;
+            #main {
+                background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 95%);
+            }
+
+            #escalade {
+                width: 80%;
             }
 
             .marca {
@@ -392,14 +403,10 @@
 
         @media (max-width: 605px) {
             #main {
-                height: 70h;
                 width: 100%;
             }
 
-            .hide {
-                display: flex;
-                justify-content: center;
-            }
+
 
         }
 
@@ -408,38 +415,19 @@
                 display: block;
                 margin-bottom: 3vh;
             }
+
+            .desktop {
+                display: none;
+            }
         }
+
+        @media (min-width: 768px) {
+            .mobile {
+                display: none;
+            }
+        }
+
     </style>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16635643036">
-    </script>
-
-    <script>
-        window["moovsAPI"] = moovsAPI = window["moovsAPI"] || [];
-        moovsAPI.push(["operator", "2ddc36e8-3475-11ef-9e79-e79d04d91d2e"]);
-        (function (m, oo, v, s) {
-            s = m.createElement(oo);
-            s.src = v;
-            s.async = 1;
-            m.head.appendChild(s);
-        })(document, "script", "https://static.moovs.app");
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-16635643036');
-
-        gtag('event', 'conversion', {
-            'send_to': 'AW-16635643036/wjCCCNLtrsAZEJyJv_w9',
-            'value': 1.0,
-            'currency': 'USD',
-            'transaction_id': ''
-        });
-    </script>
-
-
 
 </head>
 
@@ -450,7 +438,7 @@
             <div class="navbrand">
 
                 <a href="/">
-                    <img src="static/logo.jpeg" alt="brand" style="width: 30vh;">
+                    <img src="static/logo.png" alt="brand" style="width: 18vh;">
                 </a>
             </div>
 
@@ -468,9 +456,17 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://customer.moovs.app/royal-road-limo-services/new/info">Book</a>
+
+        
+                    <li class="nav-item mobile">
+                        <a class="nav-link" href="sms:+18187301967">Book now</a>
                     </li>
+
+                    <li class="nav-item desktop">
+                        <a class="nav-link" href="mailto:ddadjkajd@gmail.com">Book now</a>
+                    </li>
+
+
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
@@ -495,16 +491,16 @@
 
     <footer>
         <div class="d-flex justify-content-center" style="margin-bottom: 2vh;">
-            <img src="static/logo.jpeg" alt="brand" style="width: 40vw;">
+            <img src="static/logofooter.png" alt="brand" style="width: 20vw;">
         </div>
         <div class="d-flex justify-content-center">
-            <h4>Los Angeles - California</h4>
+            <h4>Sherman Oaks, CA</h4>
         </div>
         <div class="d-flex justify-content-center">
-            <h4>+310.341.6694</h4>
+            <h4>818-730-1967</h4>
         </div>
         <div class="d-flex justify-content-center">
-            <h4>reservationsroyalroad@gmail.com</h4>
+            <h4>mnglimollc@gmail.com</h4>
         </div>
     </footer>
 

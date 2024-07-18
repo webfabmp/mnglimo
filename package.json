@@ -1,5 +1,5 @@
 {
-  "name": "royalroad",
+  "name": "mnglimo",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -15,6 +15,7 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-ejs-layouts": "^2.5.1",
+    "nodemon": "^3.1.4",
     "postcss": "^8.4.39",
     "postcss-cli": "^11.0.0"
   }
